@@ -1,7 +1,13 @@
 @font-face {
   font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
-  src: local('Sporting Grotesque') local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff2') format('woff2'),
-  local('Sporting Grotesque') local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff') format('woff'),;
+  font-weight: lighter;
+  src: local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
+  font-weight: lighter;
+  src: local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff') format('woff'),;
 }
 
 html {
@@ -25,7 +31,6 @@ h1 {
   z-index: 1;
   position: absolute;
   margin: 14rem 4rem 4rem 6rem;
-  font-weight: normal;
   color: #FFD232;
   font-size: 3rem;
   line-height: 5rem;
@@ -106,7 +111,6 @@ h1 {
         top: 0;
         width: 6.25rem;
         height: 6.25rem;
-
     }
     95% {
         height: 6.25rem;
