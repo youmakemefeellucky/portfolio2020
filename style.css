@@ -10,7 +10,7 @@
   src: local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff') format('woff'),;
 }
 
-@font-face{font-family:Faune;src:url(http://www.cnap.graphismeenfrance.fr/faune/fonts/eot/Faune-Text_Regular.eot);src:url(http://www.cnap.graphismeenfrance.fr/faune/fonts/eot/Faune-Text_Regular.eot?#iefix) format("embedded-opentype"),url(http://www.cnap.graphismeenfrance.fr/faune/fonts/woff2/Faune-Text_Regular.woff2) format("woff2"),url(http://www.cnap.graphismeenfrance.fr/faune/fonts/woff/Faune-Text_Regular.woff) format("woff"),url(http://www.cnap.graphismeenfrance.fr/faune/fonts/ttf/Faune-Text_Regular.ttf) format("truetype"),url(http://www.cnap.graphismeenfrance.fr/faune/fonts/svg/Faune-Text_Regular.svg#Faune-Text_Regular) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:Faune;src:url(https://www.cnap.graphismeenfrance.fr/faune/fonts/eot/Faune-Text_Regular.eot);src:url(https://www.cnap.graphismeenfrance.fr/faune/fonts/eot/Faune-Text_Regular.eot?#iefix) format("embedded-opentype"),url(https://www.cnap.graphismeenfrance.fr/faune/fonts/woff2/Faune-Text_Regular.woff2) format("woff2"),url(https://www.cnap.graphismeenfrance.fr/faune/fonts/woff/Faune-Text_Regular.woff) format("woff"),url(https://www.cnap.graphismeenfrance.fr/faune/fonts/ttf/Faune-Text_Regular.ttf) format("truetype"),url(https://www.cnap.graphismeenfrance.fr/faune/fonts/svg/Faune-Text_Regular.svg#Faune-Text_Regular) format("svg");font-weight:400;font-style:normal}
 
 html {
   user-select: none;
