@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
+  src: url("SportingGrotesque-Regular.woff2") format("woff2");
+}
+
+html {
+  user-select: none;
+  background-color: white;
+}
+
+@media only screen and (max-width: 414px) {
+  html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+  }
+}
+
+h1, h3, h4 {
+  font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
+}
+
+h1 {
+  z-index: 1;
+  position: absolute;
+  margin: 6rem 4rem 4rem 6rem;
+  font-weight: normal;
+  color: #FFD232;
+  font-size: 3rem;
+  line-height: 5rem;
+  mix-blend-mode: difference;
+}
+
+@media only screen and (max-width: 414px) {
+  h1 {
+    width: 90vw;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 8rem 0 4rem 0;
+    padding: 0 1rem 0 1rem;
+  }
+}
+.wrapper {
+  z-index: -10;
+  position: absolute;
+  width: 100vw;
+  height: 300vh;                /* change later*/
+  background-color: white;
+  overflow-x: hidden;
+}
+
+#shadow {
+  z-index: -2;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  margin: 25rem auto auto 25rem;
+  position: absolute;
+  background-color: black;
+  animation: shadow 3s ease-in-out Infinite Alternate;
+}
+
+@keyframes shadow {
+  0% {
+  }
+  100% {
+    background-color: white;
+    box-shadow: 2.5rem -0.625rem 1.25rem 0 black;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #shadow {
+    margin: 20rem 0 0 12rem;
+  }
+}
+
+#square {
+  display: inline-block;
+  z-index: -1;
+  margin : 31.25rem 0 0 56.25rem;
+  position: absolute;
+  width: 18.75rem;
+  height: 18.75rem;
+  transform: rotate(30deg);
+  background-color: black;
+}
+
+@media only screen and (max-width: 414px) {
+  #square {
+    display: none;
+  }
+}
+
+#ball {
+  position: relative;
+  margin: 0 0 0 12.5rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  background: #000;
+  animation: ball 1s ease-in Infinite Alternate;
+}
+
+@keyframes ball {
+    0% {
+        top: 0;
+    }
+    95% {
+        width: 6.25rem;
+    }
+    to {
+        top: 21.875rem;
+        width: 7.18rem;
+        height: 5.625rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+  #ball {
+    margin-left: 1rem;
+  }
+}
