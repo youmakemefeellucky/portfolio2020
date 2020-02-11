@@ -9,6 +9,9 @@ function openCV() {
     y.style.display = "none";
     z.style.display = "block";
     xx.style.display = "none";
+    $(document).ready(function(){
+    $(this).scrollTop(0);
+});
   } else {
     x.style.display = "none";
     y.style.display = "block";
@@ -33,7 +36,7 @@ function closeCV() {
 
 $(document).ready(slideToggle(){
   $("cvButton").click(slideToggle(){
-  
+
 }
 }
 
