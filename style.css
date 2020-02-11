@@ -25,7 +25,7 @@ html {
   }
 }
 
-h1, h3, h4 {
+h1, h3, h4, span {
   font-family: 'SportingGrotesque-Regular', 'Faune', Helvetica, sans-serif;
 }
 
@@ -48,6 +48,17 @@ h1 {
     padding: 0 1rem 0 1rem;
   }
 }
+
+span {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 414px) {
+  span {
+    font-size: 1.5rem;
+  }
+}
+
 .wrapper {
   z-index: -10;
   position: absolute;
@@ -129,4 +140,25 @@ h1 {
   #ball {
     margin-left: 1rem;
   }
+}
+
+#button1 {
+    position: fixed;
+    float: right;
+    top: 2rem;
+    right: 2rem;
+}
+
+@media only screen and (max-width: 414px) {
+  #button1 {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+#button2 {
+    position: fixed;
+    float: right;
+    bottom: 2rem;
+    right: 2rem;
 }
