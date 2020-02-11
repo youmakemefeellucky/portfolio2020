@@ -90,6 +90,14 @@ a {
   right: 1.5rem;
 }
 
+@media only screen and (max-width: 414px) {
+  #exitButton {
+    transform: scale(0.5);
+    top: 0.2rem;
+    right: 0;
+  }
+}
+
 #profile {
   width: 10rem;
 }

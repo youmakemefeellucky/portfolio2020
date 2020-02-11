@@ -21,8 +21,20 @@ function closeCV() {
     x.style.display = "none";
     y.style.display = "block";
     z.style.display = "none";
+    xx.style.display = "block";
 } else {
   x.style.display = "block";
   z.style.display = "block";
+  xx.style.display = "none";
   }
 }
+
+/*
+
+$(document).ready(slideToggle(){
+  $("cvButton").click(slideToggle(){
+  
+}
+}
+
+*/
