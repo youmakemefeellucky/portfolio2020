@@ -49,6 +49,11 @@ h1 {
   }
 }
 
+h3 {
+  color: #002DCD;
+  font-size: 2rem;
+}
+
 span {
   font-size: 2rem;
   text-align: right;
@@ -68,6 +73,16 @@ span {
   height: 300vh;                /* change later*/
   background-color: white;
   overflow-x: hidden;
+}
+
+#CV {
+  width: 100vw;
+  height: 300vh;
+  overflow: hidden;
+}
+
+#profile {
+  width: 10rem;
 }
 
 #shadow {
