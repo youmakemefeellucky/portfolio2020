@@ -13,15 +13,16 @@
 
 <body>
 
-  <span id="button1" onclick="openCV()">CV</span>
-  <span id="button2">Contact</span>
+  <a id="cvButton" onclick="openCV()">CV</a>
+  <a id="contactButton">Contact</a>
 
   <div id="CV">
+    <img src="exit_blue.svg" id="exitButton" onclick="closeCV()">
     <img src="profile.png" id="profile">
     <h3>Hyewon Kim</h3>
   </div>
 
-  <div class="wrapper">
+  <div id="wrapper">
     <div id="shadow"></div>
     <div id="square"></div>
     <div id="ball"></div>

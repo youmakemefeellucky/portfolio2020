@@ -25,7 +25,7 @@ html {
   }
 }
 
-h1, h3, h4, span {
+h1, h3, h4, a {
   font-family: 'SportingGrotesque-Regular', 'Faune', Helvetica, sans-serif;
 }
 
@@ -54,19 +54,19 @@ h3 {
   font-size: 2rem;
 }
 
-span {
+a {
   font-size: 2rem;
   text-align: right;
   z-index: 10;
 }
 
 @media only screen and (max-width: 414px) {
-  span {
+  a {
     font-size: 1.5rem;
   }
 }
 
-.wrapper {
+#wrapper {
   z-index: -10;
   position: absolute;
   width: 100vw;
@@ -76,9 +76,18 @@ span {
 }
 
 #CV {
+  display: none;
   width: 100vw;
   height: 300vh;
   overflow: hidden;
+}
+
+#exitButton {
+  display: none;
+  position: fixed;
+  float: right;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 #profile {
@@ -131,6 +140,8 @@ span {
 #ball {
   position: absolute;
   margin: 0 0 0 12.5rem;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
   background: #000;
   animation: ball 1s ease-in Infinite Alternate;
@@ -159,7 +170,7 @@ span {
   }
 }
 
-#button1 {
+#cvButton {
     position: fixed;
     float: right;
     top: 2rem;
@@ -167,13 +178,13 @@ span {
 }
 
 @media only screen and (max-width: 414px) {
-  #button1 {
+  #cvButton {
     top: 1rem;
     right: 1rem;
   }
 }
 
-#button2 {
+#contactButton {
     position: fixed;
     float: right;
     bottom: 2rem;
@@ -181,7 +192,7 @@ span {
 }
 
 @media only screen and (max-width: 414px) {
-  #button2 {
+  #contactButton {
     bottom: 1rem;
     right: 1rem;
   }
