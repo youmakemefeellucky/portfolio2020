@@ -1,13 +1,17 @@
 @font-face {
-  font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
+  font-family: "SportingGrotesque-Regular", "Faune", Helvetica, sans-serif;
   font-weight: lighter;
   src: local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
+  font-family: "SportingGrotesque-Regular", "Faune", Helvetica, sans-serif;
   font-weight: lighter;
   src: local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff') format('woff'),;
+}
+
+svg {
+  font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
 }
 
 html {
