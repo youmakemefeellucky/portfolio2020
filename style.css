@@ -1,6 +1,7 @@
 @font-face {
   font-family: "SportingGrotesque-Regular", Helvetica, sans-serif;
-  src: local('Sporting Grotesque') local('SportingGrotesque-Regular') url("SportingGrotesque-Regular.woff2") format("woff2");
+  src: local('Sporting Grotesque') local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff2') format('woff2'),
+  local('Sporting Grotesque') local('SportingGrotesque-Regular') url('SportingGrotesque-Regular.woff') format('woff'),;
 }
 
 html {
