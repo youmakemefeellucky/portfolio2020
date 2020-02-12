@@ -121,9 +121,9 @@ a {
   width: 100vw;
   height: 300vh;
   overflow: hidden;
-  background-image: url("stroke3.svg");
+  background-image: url("stroke3.png");
   background-color: white;
-  background-position: 20% 80%;
+  background-repeat: no-repeat;
   margin: -8px -8px -8px -8px;
 }
 
