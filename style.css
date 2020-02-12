@@ -229,6 +229,8 @@ a {
 @media only screen and (max-width: 414px) {
   #ball {
     margin-left: 1rem;
+    width: 6.25rem;
+    height: 6.25rem;
   }
 }
 
