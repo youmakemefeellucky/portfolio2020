@@ -167,18 +167,18 @@ a {
   animation: shadow 3s ease-in-out Infinite Alternate;
 }
 
+@media only screen and (max-width: 414px) {
+  #shadow {
+    margin: 20rem 0 0 12rem;
+  }
+}
+
 @keyframes shadow {
   0% {
   }
   100% {
     background-color: white;
     box-shadow: 2.5rem -0.625rem 1.25rem 0 black;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #shadow {
-    margin: 20rem 0 0 12rem;
   }
 }
 
@@ -209,6 +209,14 @@ a {
   animation: ball 1s ease-in Infinite Alternate;
 }
 
+@media only screen and (max-width: 414px) {
+  #ball {
+    margin: 0 0 0 1rem;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+
 @keyframes ball {
     0% {
         top: 0;
@@ -224,14 +232,6 @@ a {
         width: 7.18rem;
         height: 5.625rem;
     }
-}
-
-@media only screen and (max-width: 414px) {
-  #ball {
-    margin-left: 1rem;
-    width: 6.25rem;
-    height: 6.25rem;
-  }
 }
 
 #cvButton {
