@@ -1,3 +1,14 @@
+$(window).scroll(function(e){
+  parallax();
+});
+
+function parallax() {
+  var scrolled = $(window).scrollTop();
+  $('.background').css('top',-(scrolled*0.15)+'px');
+}
+
+
+
 var x = document.getElementById("CV");
 var y = document.getElementById("cvButton");
 var z = document.getElementById("exitCV");
