@@ -1,6 +1,6 @@
 var x = document.getElementById("CV");
 var y = document.getElementById("cvButton");
-var z = document.getElementById("exitButton");
+var z = document.getElementById("exitCV");
 var xx = document.getElementById("wrapper");
 
 function openCV() {
@@ -9,6 +9,7 @@ function openCV() {
     y.style.display = "none";
     z.style.display = "block";
     xx.style.display = "none";
+
     $(document).ready(function(){
     $(this).scrollTop(0);
 });
@@ -32,12 +33,33 @@ function closeCV() {
   }
 }
 
-/*
 
-$(document).ready(slideToggle(){
-  $("cvButton").click(slideToggle(){
 
+
+
+
+var a = document.getElementById("contact");
+var b = document.getElementById("contactButton");
+var c = document.getElementById("exitContact");
+
+function openContact() {
+  if (a.style.display === "none") {
+    a.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "block";
+} else {
+    a.style.display = "none";
+    b.style.display = "block";
+  }
 }
-}
 
-*/
+function closeContact() {
+  if (a.style.display === "block" && c.style.display === "block") {
+    a.style.display = "none";
+    b.style.display = "block";
+    c.style.display = "none";
+} else {
+  a.style.display = "block";
+  c.style.display = "block";
+  }
+}

@@ -16,6 +16,7 @@ html {
   user-select: none;
   background-color: white;
   padding: 0;
+  cursor: url('cursor_blue.png'), auto;
 }
 
 @media only screen and (max-width: 414px) {
@@ -100,6 +101,10 @@ a {
   z-index: 10;
 }
 
+a:hover {
+  cursor: url('cursor_yellow.png'), auto;
+}
+
 @media only screen and (max-width: 414px) {
   a {
     font-size: 1.5rem;
@@ -113,13 +118,14 @@ a {
   height: 300vh;                /* change later*/
   background-color: white;
   overflow-x: hidden;
-  margin: -8px -8px -8px 0;
+  margin: 0;
+  padding: 0;
 }
 
 #CV {
   display: none;
   width: 100vw;
-  height: 300vh;
+  padding-bottom: 10rem;
   overflow: hidden;
   background-image: url("stroke3.png");
   background-color: white;
@@ -127,16 +133,18 @@ a {
   margin: -8px -8px -8px -8px;
 }
 
-#exitButton {
-  display: none;
+#exitCV {
   position: fixed;
-  float: right;
   top: 1.5rem;
   right: 1.5rem;
 }
 
+#exitCV:hover {
+  cursor: url('cursor_yellow.png'), auto;
+}
+
 @media only screen and (max-width: 414px) {
-  #exitButton {
+  #exitCV {
     transform: scale(0.5);
     top: 0.2rem;
     right: 0;
@@ -162,6 +170,7 @@ a {
 
 .left {
   width: 15%;
+  color: #636363;
 }
 
 .right {
@@ -170,6 +179,14 @@ a {
 
 .row {
   margin-left: 20rem;
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 414px) {
+  .row  {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -287,5 +304,75 @@ a {
   #contactButton {
     bottom: 1rem;
     right: 1rem;
+  }
+}
+
+#contact {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: #161616;
+}
+
+@media only screen and (max-width: 414px) {
+  #contact {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    overflow: hidden;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    top: 50vh;
+    height: 50vh;
+    width: 100vw;
+    background-color: #161616;
+  }
+}
+
+.info {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  color: #FFD232;
+  top: 35vh;
+}
+
+.info:hover {
+  transform: scale(1.2);
+  color: #48E100;
+}
+
+@media only screen and (max-width: 414px) {
+  .info {
+    font-size: 2rem;
+    top: 17vh;
+  }
+}
+
+#exitContact {
+  z-index: 11;
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+}
+
+#exitContact:hover {
+  cursor: url('cursor_yellow.png'), auto;
+}
+
+@media only screen and (max-width: 414px) {
+  #exitContact {
+    transform: scale(0.5);
+    bottom: 0.4rem;
+    right: 0;
   }
 }

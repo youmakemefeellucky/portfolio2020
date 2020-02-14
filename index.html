@@ -8,28 +8,87 @@
     <script src="jquery-3.4.1.min.js"></script>
 
     <title>Hyewon Kim</title>
+    <link rel="icon" type="image/png" href="cursor_yellow.png">
   </head>
 
 <body>
 
   <a id="cvButton" onclick="openCV()">CV</a>
-  <a id="contactButton">Contact</a>
+  <a id="contactButton" onclick="openContact()">Contact</a>
 
   <div id="CV">
-    <img src="exit_blue.svg" id="exitButton" onclick="closeCV()">
+    <img src="exit_blue.svg" id="exitCV" onclick="closeCV()">
     <img src="profile.png" id="profile">
     <h3>Hyewon Kim</h3>
     <h6>Étudiante en M1 Création et édition numérique à l'Université Paris 8</h6>
-    <h4>Expériences professionnelles</h4>
 
+    <h4>Expériences professionnelles</h4>
     <div class="row">
-      <div class="column left">2019-2020<br><br><br><br>2018</div>
+      <div class="column left">2019-2020</div>
       <div class="column right">Design (graphique, motion, web)<br>Onceagain Paris - agence de tourisme</div>
+    </div>
+    <div class="row" style="height: 2rem"></div>
+    <div class="row">
+      <div class="column left">2018</div>
+      <div class="column right">Création de l’identité visuelle pour le concert<br>
+      “À la recherche des rêves perdus” au Festival des Idées 2018</div>
+    </div>
+
+    <h4>Autres expériences</h4>
+    <div class="row">
+      <div class="column left">2019</div>
+      <div class="column right">Co-organisatrice de Petit Feu<br>Salon de la micro-céramique au Point Éphémère, Paris</div>
+    </div>
+    <div class="row" style="height: 2rem"></div>
+    <div class="row">
+      <div class="column left">2017-2019</div>
+      <div class="column right"><i>Exposante aux salons de livres d’artistes avec Studio HAP :</i><br>Ass Book Fair 2019, Palais de Tokyo, Paris<br>Miss Read 2019, Haus der Kulturen der Welt, Berlin<br>Anti-aufklärung salon de micro-édition 2019, Point Éphémère, Paris<br>Couper-décaler 2019, Tetris, Le Havre<br>Toronto Art Book Fair 2017, Artscape Youngplace, Toronto
+      </div>
+    </div>
+    <div class="row" style="height: 2rem"></div>
+    <div class="row">
+      <div class="column left">2016-2019</div>
+      <div class="column right"><i>Exposition collectives :</i><br>Petit Feu - salon de la micro-céramique 2019, Point Éphémère, Paris<br>Trotti expo 2018, Villa Belleville, Paris<br>Été 2018, Villa Belleville, Paris<br>Self invitation 14m2 2018, Hon books, Grands Voisins, Paris<br>Sad Art Store 2017, Toronto<br>Graphic Design Festival Scotland 2016 Poster Competition, The Lighthouse, Glasgow
+      </div>
+    </div>
+    <div class="row" style="height: 2rem"></div>
+    <div class="row">
+      <div class="column left">2018</div>
+      <div class="column right">Design éditorial<br>Association 82 Magazine, Paris
+      </div>
+    </div>
+
+    <h4>Formations</h4>
+    <div class="row">
+      <div class="column left">2019-2020</div>
+      <div class="column right">M1 Création et édition numérique<br>Université Paris 8</div>
+    </div>
+    <div class="row" style="height: 2rem"></div>
+    <div class="row">
+      <div class="column left">2018-2019</div>
+      <div class="column right">L3 Design, Arts, Médias<br>Université Paris 1</div>
+    </div>
+    <div class="row" style="height: 2rem"></div>
+    <div class="row">
+      <div class="column left">2016-2018</div>
+      <div class="column right">L1, L2 Arts plastiques<br>Université Paris 1</div>
+    </div>
+
+    <h4>Langues</h4>
+    <div class="row">Français / Anglais / Japonais / Coréen</div>
+
+
     </div>
 
 
-
   </div>
+
+  <div id="contact">
+    <img src="exit_yellow.svg" id="exitContact" onclick="closeContact()">
+    <a class="info" href="mailto:youmakemefeellucky@gmail.com" target="_blank">Mail</a>
+    <a class="info" href="https://instagram.com/monotombowcrayon" target="_blank">Instagram</a>
+  </div>
+
 
   <div id="wrapper">
     <div id="shadow"></div>
