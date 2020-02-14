@@ -336,6 +336,7 @@ a:hover {
 }
 
 .info {
+  display: none;
   position: relative;
   display: block;
   text-align: center;
@@ -357,6 +358,7 @@ a:hover {
 }
 
 #exitContact {
+  display: none;
   z-index: 11;
   position: fixed;
   bottom: 2rem;
