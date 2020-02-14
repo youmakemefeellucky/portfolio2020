@@ -179,6 +179,9 @@ a:hover {
 
 .row {
   margin-left: 20rem;
+}
+
+.row div {
   font-family: 'Rubik', Helvetica, sans-serif;
   font-size: 1.125rem;
 }
@@ -186,11 +189,6 @@ a:hover {
 @media only screen and (max-width: 414px) {
   .row  {
     font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .row {
     margin-left: 2rem;
   }
 }
