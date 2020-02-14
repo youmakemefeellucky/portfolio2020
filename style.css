@@ -104,6 +104,7 @@ a {
   font-size: 2rem;
   text-align: right;
   z-index: 10;
+  padding: 1rem;
 }
 
 a:hover {
@@ -367,6 +368,7 @@ a:hover {
   display: none;
   z-index: 11;
   position: fixed;
+  width: 83px;
   bottom: 2rem;
   right: 1.5rem;
 }
@@ -395,11 +397,12 @@ a:hover {
   z-index: -11;
 }
 
-.container {
+#portfolio {
+  display: block;
   position: absolute;
-  width: 60vw;
+  width: 70vw;
   top: 150vh;
-  left: 20vw;
+  left: 15vw;
   background-color: gold;
 }
 
