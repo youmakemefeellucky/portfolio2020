@@ -8,8 +8,12 @@
 
 @font-face {
     font-family: 'sporting_grotesqueregular';
-    src: url('sportinggrotesque-regular-webfont.woff2') format('woff2'),
-         url('sportinggrotesque-regular-webfont.woff') format('woff');
+    src: url('sportinggrotesque-regular-webfont.eot');
+    src: url('sportinggrotesque-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sportinggrotesque-regular-webfont.woff2') format('woff2'),
+         url('sportinggrotesque-regular-webfont.woff') format('woff'),
+         url('sportinggrotesque-regular-webfont.ttf') format('truetype'),
+         url('sportinggrotesque-regular-webfont.svg#sporting_grotesqueregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
