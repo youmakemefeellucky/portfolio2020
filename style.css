@@ -18,18 +18,6 @@
     font-style: normal;
 }
 
-@font-face{
-    font-family: 'Faune';
-    src: url(https://www.cnap.graphismeenfrance.fr/faune/fonts/eot/Faune-Text_Regular.eot);
-    src: url(https://www.cnap.graphismeenfrance.fr/faune/fonts/eot/Faune-Text_Regular.eot?#iefix) format("embedded-opentype"),
-         url(https://www.cnap.graphismeenfrance.fr/faune/fonts/woff2/Faune-Text_Regular.woff2) format("woff2"),
-         url(https://www.cnap.graphismeenfrance.fr/faune/fonts/woff/Faune-Text_Regular.woff) format("woff"),
-         url(https://www.cnap.graphismeenfrance.fr/faune/fonts/ttf/Faune-Text_Regular.ttf) format("truetype"),
-         url(https://www.cnap.graphismeenfrance.fr/faune/fonts/svg/Faune-Text_Regular.svg#Faune-Text_Regular) format("svg");
-    font-weight: 400;
-    font-style: normal
-}
-
 @font-face {
     font-family: 'happy_times_at_the_ikobitalic';
     src: url('happy-times-at-the-ikob_italic-webfont.woff2') format('woff2'),
@@ -63,7 +51,7 @@ html {
 }
 
 h1, h3, h4, a {
-  font-family: 'SportingGrotesque-Regular', 'Faune', Helvetica, sans-serif;
+  font-family: 'sporting_grotesqueregular', Helvetica, sans-serif;
 }
 
 h1 {
@@ -87,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'happy_times_at_the_ikobRg';
+  font-family: 'happy_times_at_the_ikobRg', monospace;
   font-size: 3.75rem;
 }
 
