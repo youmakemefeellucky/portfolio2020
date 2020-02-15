@@ -26,6 +26,22 @@
     font-style: normal
 }
 
+@font-face {
+    font-family: 'happy_times_at_the_ikobitalic';
+    src: url('happy-times-at-the-ikob_italic-webfont.woff2') format('woff2'),
+         url('happy-times-at-the-ikob_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'happy_times_at_the_ikobRg';
+    src: url('happy-times-at-the-ikob-webfont.woff2') format('woff2'),
+         url('happy-times-at-the-ikob-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
   user-select: none;
   background-color: white;
@@ -67,7 +83,8 @@ h1 {
 }
 
 h2 {
-  font-family: ''
+  font-family: 'happy_times_at_the_ikobRg';
+  font-size: 3.75rem;
 }
 
 h3 {
@@ -146,6 +163,7 @@ a:hover {
 #CV {
   display: none;
   width: 100vw;
+  height: 2200px;
   padding-bottom: 10rem;
   overflow: hidden;
   background-image: url("stroke3.png");
@@ -417,10 +435,36 @@ a:hover {
   width: 70vw;
   top: 150vh;
   left: 15vw;
-  background-color: gold;
 }
 
-#smoke {
-  width: 30vw;
+.description{
+  display: inline-block;
+  margin-left: 7rem;
+}
+
+.desc {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  color: black;
+}
+
+[id^="projet"] {
+  height: 30rem;
+  margin-top: 10rem;
+}
+
+[id^="projet"]:hover h2{
+  color: #CD0000;
+  font-family: 'happy_times_at_the_ikobitalic';
+}
+
+[id^="projet"]:nth-child(odd) img {
+  height: 30vw;
+  float: left;
+}
+
+[id^="projet"]:nth-child(even) img {
+  height: 30vw;
   float: right;
 }
