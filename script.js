@@ -22,7 +22,6 @@ function openCV() {
     z.style.display = "block";
     xx.style.display = "none";
     xxx.style.display = "none";
-
     $(document).ready(function(){
     $(this).scrollTop(0);
 });
@@ -50,8 +49,42 @@ function closeCV() {
 }
 
 
+var m = document.getElementById("metro");
+var v = document.getElementById("exitVideo");
 
 
+function openMetro() {
+  if (m.style.display === "none") {
+    m.style.display = "block";
+    v.style.display = "block";
+
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+    const body = document.body;
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}`;
+
+  } else {
+    m.style.display = "none";
+  }
+}
+
+function closeVideo() {
+  if (m.style.display === "block") {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    m.style.display = "none";
+    v.style.display = "none";
+  } else {
+    m.style.display = "block";
+  }
+}
+
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
 
 
 var a = document.getElementById("contact");

@@ -8,17 +8,17 @@
     <script src="jquery-3.4.1.min.js"></script>
 
     <title>Hyewon Kim</title>
-    <link rel="icon" type="image/png" href="cursor_yellow.ico">
+    <link rel="icon" type="image/ico" href="img/cursor_yellow.ico">
   </head>
 
 <body>
 
-  <a id="cvButton" onclick="openCV()">CV</a>
-  <a id="contactButton" onclick="openContact()">Contact</a>
+  <a id="cvButton" class="yellow" onclick="openCV()">CV</a>
+  <a id="contactButton" class="yellow" onclick="openContact()">Contact</a>
 
   <div id="CV">
-    <img src="exit_blue.svg" id="exitCV" onclick="closeCV()">
-    <img src="profile.png" id="profile">
+    <img src="img/exit_blue.svg" id="exitCV" class="yellow" onclick="closeCV()">
+    <img src="img/profile.png" id="profile">
     <h3>Hyewon Kim</h3>
     <h6>Étudiante en M1 Création et édition numérique à l'Université Paris 8</h6>
 
@@ -84,7 +84,7 @@
   </div>
 
   <div id="contact">
-    <img src="exit_yellow.svg" id="exitContact" onclick="closeContact()">
+    <img src="img/exit_yellow.svg" id="exitContact" class="yellow" onclick="closeContact()">
     <a class="info" href="mailto:youmakemefeellucky@gmail.com" target="_blank">Mail</a>
     <a class="info" href="https://instagram.com/monotombowcrayon" target="_blank">Instagram</a>
   </div>
@@ -93,31 +93,37 @@
     <div id="shadow"></div>
     <div id="square"></div>
     <div id="ball"></div>
-    <h1>You've spent some time<br>in the morning sun<br>But what goes up<br>must come down</h1>
+    <h1>Bonjour, je m'appelle Hyewon.<br>Je suis étudiante<br>en Création et édition <br>numérique.</h1>
   </div>
 
   <div class="background"></div>
 
   <div id="portfolio">
 
-    <div id="projet1">
-    <img src="smoke.gif" id="smoke">
+    <div class="projet">
+    <img src="img/smoke.gif">
     <div class="description"><h2>Happy Valentine</h2><span class="desc">2020, GIF<br><br>Illustration, Motion design<br>Projet personnel</span></div>
     </div>
 
-    <div id="projet2">
-    <img src="phone.gif" id="phone">
+    <div class="projet">
+    <img src="img/phone.gif">
     <div class="description"><h2>Phone</h2><span class="desc">2020, GIF<br><br>Illustration, Motion design<br>Projet personnel</span></div>
     </div>
 
-    <div id="projet3">
-    <img src="metro.png" id="metro">
-    <div class="description"><h2>Métro au pays des merveilles</h2><span class="desc">2020, VIDÉO<br><br>Illustration, Motion design<br>Projet en groupe</span></div>
+    <div class="projet yellow" onclick="openMetro()">
+      <img src="img/metro.png">
+      <div class="description"><h2>Métro au pays<br>des merveilles</h2><span class="desc">2020, VIDÉO<br><br>Illustration, Motion design<br>Projet en groupe</span></div>
+    </div>
+
+    <div class="video" id="metro">
+      <video controls>
+        <source src="img/metro.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <img src="img/exit_yellow.svg" id="exitVideo" class="yellow" onclick="closeVideo()">
     </div>
 
   </div>
-
-
 
     <script type="text/javascript" src="script.js"></script>
 </body>
